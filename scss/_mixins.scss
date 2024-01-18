@@ -1,0 +1,6 @@
+// Миксин для центрирования flex элементов
+@mixin center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }

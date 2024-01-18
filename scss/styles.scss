@@ -1,0 +1,93 @@
+// Импорт сброса стилей
+@import 'reset';
+
+// Импорт базовых стилей
+@import 'base';
+
+// Импорт переменных
+@import 'variables';
+
+//Импорт миксинов
+@import 'mixins';
+
+
+.header_nav_bloc {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.header_logo,
+#header_nav_centre {
+    @include center-flex;
+}
+
+.label_header_nav {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    display: flex;
+    line-height: 150%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.nav-item {
+    margin: 10px 0;
+}
+
+.nav_item_burger {
+    display: none;
+}
+
+.burger_nav {
+    display: none;
+}
+
+.nav-link {
+    display: flex;
+    color: var(--text-dark, #403F3D);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.9s;
+    margin: 0 2px 2px 0;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #403F3D;
+    opacity: 0;
+    transition: width 0.6s, opacity 0.6s;
+}
+
+.nav-link:hover::after,
+.nav-link:active::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.nav-link.active::after {
+    width: 100%;
+    opacity: 1;
+}
+
+#menu_coffee .nav-link.active {
+    cursor: default;
+}

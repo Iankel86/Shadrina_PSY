@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+img,
+iframe,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  color: #333;
+}
+
+.header_nav_bloc {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.header_logo,
+#header_nav_centre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label_header_nav {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  display: flex;
+  line-height: 150%;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.nav-item {
+  margin: 10px 0;
+}
+
+.nav_item_burger {
+  display: none;
+}
+
+.burger_nav {
+  display: none;
+}
+
+.nav-link {
+  display: flex;
+  color: var(--text-dark, #403F3D);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.9s;
+  margin: 0 2px 2px 0;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #403F3D;
+  opacity: 0;
+  transition: width 0.6s, opacity 0.6s;
+}
+
+.nav-link:hover::after,
+.nav-link:active::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.nav-link.active::after {
+  width: 100%;
+  opacity: 1;
+}
+
+#menu_coffee .nav-link.active {
+  cursor: default;
+}
+
+/*# sourceMappingURL=styles.css.map */
