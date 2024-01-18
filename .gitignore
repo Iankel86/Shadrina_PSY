@@ -1,0 +1,16 @@
+# Файлы среды разработки
+.DS_Store
+.env
+.vscode/
+
+# Файлы логов
+*.log
+
+# Директории с временными файлами
+tmp/
+temp/
+
+# Возможно надо будет поправить
+node_modules/
+package-lock.json
+yarn.lock
