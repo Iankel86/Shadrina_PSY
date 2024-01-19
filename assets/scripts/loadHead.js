@@ -2,8 +2,8 @@
 // function loadHeadContent() {
 //     // Создание нового запроса
 //     const xhr = new XMLHttpRequest();
-//     // Конфигурация запроса на получение содержимого файла MainHead.html
-//     xhr.open('GET', 'components/MainHead.html', true);
+//     // Конфигурация запроса на получение содержимого файла Head.html
+//     xhr.open('GET', 'components/Head.html', true);
 //     xhr.onreadystatechange = function() {
 //     if (xhr.readyState === 4 && xhr.status === 200) {
 //         // Создание нового элемента <div>, содержащего полученный HTML
