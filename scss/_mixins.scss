@@ -1,6 +1,23 @@
 // Миксин для центрирования flex элементов
-@mixin center-flex {
+@mixin flex_center_center {
     display: flex;
     align-items: center;
     justify-content: center;
     }
+
+@mixin flex_justify_center {
+    display: flex;
+    justify-content: center;
+    }
+
+@mixin flex_space-between {
+    display: flex;
+    justify-content: space-between;
+    }
+
+@mixin flex_center_space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+

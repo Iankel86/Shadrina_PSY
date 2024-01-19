@@ -1,28 +1,30 @@
-// Импорт сброса стилей
-@import 'reset';
-
-// Импорт базовых стилей
-@import 'base';
-
 // Импорт переменных
 @import 'variables';
+
+// Импорт сброса стилей
+@import 'reset';
 
 //Импорт миксинов
 @import 'mixins';
 
+// Импорт базовых стилей
+@import 'base';
 
+.flex_center {
+    @include flex_justify_center;
+}
+
+// Header
 .header_nav_bloc {
+    @include flex_center_space-between;
     height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-left: 40px;
     padding-right: 40px;
 }
 
 .header_logo,
 #header_nav_centre {
-    @include center-flex;
+    @include flex_center_center;
 }
 
 .label_header_nav {
@@ -91,3 +93,70 @@
 #menu_coffee .nav-link.active {
     cursor: default;
 }
+
+// Header END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Footer
+.footer_information {
+    @include flex_space-between;
+}
+
+.footer_policy h4,
+.footer_contacts h4 {
+    padding: 0 0 20px;
+}
+
+
+.footer_developer_icon{
+    @include flex_center_center
+}
+
+.footer_contacts_socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+// .contacts_socials_icon {
+//     cursor: pointer;
+//     display: flex;
+//     width: 40px;
+//     height: 40px;
+//     justify-content: center;
+//     align-items: center;
+//     border-radius: 100px;
+//     border: 1px solid var(--border-light, #C1B6AD);
+//     background: var(--background-container, #665F55);
+//     transition: background 0.6s ease-in-out, color 0.6s ease-in-out;
+// }
+
+// .contacts_socials_icon:hover {
+//     background: var(--background-body, #E1D4C9);
+//     transition: background 0.6s ease-in-out;
+// }
+
+// .contacts_socials_icon:hover svg path {
+//     stroke: #403F3D;
+// }
+
+
+// Footer END

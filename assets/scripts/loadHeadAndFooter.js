@@ -15,9 +15,7 @@ function loadContent(selector, filePath) {
         });
 }
 
-// Вызов функции при загрузке страницы
 document.addEventListener('DOMContentLoaded', function() {
-    loadContent('head', 'components/MainHead.html'); // Добавление содержимого в <head>
-    loadContent('footer', 'components/MainFooter.html'); // Добавление содержимого в <footer>
-    // Можно добавить дополнительные вызовы для других частей страницы
+    loadContent('head', 'components/Head.html');
+    loadContent('footer', 'components/Footer.html');
 });
