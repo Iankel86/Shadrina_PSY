@@ -1,0 +1,25 @@
+{
+  "name": "shadrina_psy",
+  "version": "1.0.0",
+  "description": "Website for a psychologist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iankel86/Shadrina_PSY.git"
+  },
+  "keywords": [
+    "psychology"
+  ],
+  "author": "https://github.com/Iankel86",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Iankel86/Shadrina_PSY/issues"
+  },
+  "homepage": "https://github.com/Iankel86/Shadrina_PSY#readme",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
